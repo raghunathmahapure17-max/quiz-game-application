@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Quiz App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Start Screen -->
+  <div id="startScreen" class="screen active">
+    <h1 class="title">Quiz Game 🎯</h1>
+    <button class="btn glow" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quizScreen" class="screen">
+    <div class="top-bar">
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+      <div class="count">1/3</div>
+    </div>
+
+    <h2 id="question"></h2>
+
+    <div id="options"></div>
+
+    <p class="timer">⏱ <span id="time">10</span>s</p>
+
+    <button class="btn next" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="resultScreen" class="screen">
+    <h2>Your Score</h2>
+    <h1 id="score">0</h1>
+    <button class="btn glow" onclick="restartQuiz()">Restart</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
