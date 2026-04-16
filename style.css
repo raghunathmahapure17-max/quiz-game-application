@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: radial-gradient(circle, #0f0f2d, #02020f);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.app {
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
+  text-align: center;
+}
+
+/* Screens */
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.glow {
+  background: linear-gradient(90deg, #00f0ff, #8a2be2);
+  color: white;
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+.next {
+  background: linear-gradient(90deg, orange, pink);
+}
+
+/* Options */
+#options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#options button:hover {
+  transform: scale(1.05);
+}
+
+.correct {
+  background: green !important;
+}
+
+.wrong {
+  background: red !important;
+}
+
+/* Progress */
+.progress {
+  width: 70%;
+  height: 8px;
+  background: #333;
+  border-radius: 10px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: lime;
+  border-radius: 10px;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  margin-top: 10px;
+}
